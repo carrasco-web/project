@@ -4,18 +4,31 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>pagina de contato</title>
-   
+    <script src="javascript.js"></script>
+
 </head>
-<body>
-    <h1>Em construção</h1>
+
+<body class="corpo">
+    <div class="cabecalho">
+        <h1>Entre em contato conosco</h1>
+    </div>
     <Div class="container">
         <div class="box">
-            em breve
-        </div> 
-    </Div>   
-    
-    Aguarde...
-    <img scr="\PROJETO-PESSOAL\trabalho.jpeg">
+            <form class="formulario">
+                <label for"nome">Nome</label>
+                <input type="text" id="nomeid" placeholder="Thiago Valle" required="required" name="nome" /><br>
+                <label for "fone">Fone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xxx-xx-xx-xx" required="required" name="Fone" /><br>
+                <label for"email">Email</label>
+                <input type="email" id="emaileid" placeholder="fulano@mail.com" required="required" name="email" /><br>
+                <textarea placeholder="Deixe a Sua mensagem"></textarea><br>
+                <input type="submit" class="enviar" onclick="Enviar();" value=Enviar>
+            </form>
+        </div>
+    </Div>
+
+
+    <img scr="trabalho.jpeg">
 </body>
 
 </html>
